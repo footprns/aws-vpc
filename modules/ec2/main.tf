@@ -15,9 +15,7 @@ variable "volume_type" {}
 variable "associate_public_ip_address" {
   type = bool
 }
-variable "subnet_id" {
-  
-}
+variable "subnet_id" {}
 
 resource "aws_instance" "default" {
   ami           = var.ami
